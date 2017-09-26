@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/infopage"
+    android:backgroundTintMode="multiply"
+    android:backgroundTint="#508DE3"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/Toolbox"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="14dp"
+        app:srcCompat="@mipmap/toolbox"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="57dp" />
+
+    <TextView
+        android:id="@+id/HereHow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Works"
+        android:textColor="@android:color/white"
+        android:textSize="35dp"
+        android:layout_below="@+id/Toolbox"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp" />
+
+    <TextView
+        android:id="@+id/Step1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Step1"
+        android:textSize="40dp"
+        android:textColor="@android:color/white"
+        android:layout_alignTop="@+id/Toolbox"
+        android:layout_toEndOf="@+id/HereHow"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:id="@+id/ChoseTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Step2"
+        android:textColor="@android:color/white"
+        android:textSize="40dp"
+        android:layout_below="@+id/Step1"
+        android:layout_alignStart="@+id/Step1"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/SendText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Step3"
+        android:textColor="@android:color/white"
+        android:textSize="40dp"
+        android:layout_below="@+id/ChoseTime"
+        android:layout_alignStart="@+id/ChoseTime"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/ContinueButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Continue"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

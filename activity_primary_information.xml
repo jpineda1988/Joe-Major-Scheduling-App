@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.joemajorheatingandair.joemajorscheduler.PrimaryInformation">
+
+    <TextView
+        android:id="@+id/Prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Prompt"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="74dp" />
+
+    <TextView
+        android:id="@+id/Heating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/HeatingSystem"
+        android:layout_below="@id/Prompt"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteY="148dp"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Spinner
+        android:id="@+id/HeatingSystem"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="174dp"
+        android:background="@android:color/white"
+        />
+
+    <TextView
+        android:id="@+id/Cooling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Cooling"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="222dp"
+        android:textColor="@android:color/white"
+        />
+
+    <Spinner
+        android:id="@+id/SelectedCooling"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="243dp" />
+
+    <Button
+        android:id="@+id/ContinueButton"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark"
+        android:text="@string/Continue"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="459dp" />
+
+
+</android.support.constraint.ConstraintLayout>

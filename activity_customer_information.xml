@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/customerinfo"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ToolIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@mipmap/tools" />
+
+    <TextView
+        android:id="@+id/Customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Customer"
+        android:textColor="@android:color/white"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ToolIcon"/>
+
+    <TextView
+        android:id="@+id/PersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/PersonName"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:layout_below="@+id/Customer"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"/>
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:inputType="textCapWords|textPersonName"
+        android:layout_alignBottom="@+id/PersonName"
+        android:layout_toRightOf="@+id/PersonName"/>
+
+    <TextView
+        android:id="@+id/Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Address"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/PersonName"
+        android:layout_alignEnd="@+id/PersonName"/>
+
+    <EditText
+        android:id="@+id/HomeAddress"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:inputType="textCapWords|textPostalAddress"
+        android:layout_alignBottom="@+id/Address"
+        android:layout_toRightOf="@+id/Address"/>
+
+    <TextView
+        android:id="@+id/CityPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/City"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:layout_below="@+id/Address"
+        android:layout_alignEnd="@+id/Address"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/CityName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:inputType="textCapWords|text"
+        android:layout_alignBottom="@+id/CityPrompt"
+        android:layout_toRightOf="@+id/CityPrompt"/>
+
+    <TextView
+        android:id="@+id/ZipNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Name"
+        android:layout_alignEnd="@+id/Customer"
+        android:layout_marginEnd="24dp"
+        android:text="@string/ZipCode"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"/>
+
+    <EditText
+        android:id="@+id/ZipCode"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:inputType="number"
+        android:layout_above="@+id/Phone"
+        android:layout_alignStart="@+id/PhoneNumber" />
+
+    <TextView
+        android:id="@+id/Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_number"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/ZipNumber"
+        android:layout_alignEnd="@+id/ZipNumber" />
+
+    <EditText
+        android:id="@+id/PhoneNumber"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:inputType="phone"
+        android:layout_alignBottom="@+id/Phone"
+        android:layout_toRightOf="@+id/Phone"/>
+
+    <TextView
+        android:id="@+id/EmailPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Email"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:layout_below="@+id/Phone"
+        android:layout_alignEnd="@+id/Phone"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/EmailAddress"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionDone"
+        android:layout_toRightOf="@+id/EmailPrompt"
+        android:layout_alignBottom="@+id/EmailPrompt"/>
+
+
+    <Button
+        android:id="@+id/Continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Continue"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_alignParentBottom="true"
+        android:onClick="openCredit"/>
+
+
+
+</RelativeLayout>

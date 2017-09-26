@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/SelectionPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Selection"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Title"/>
+
+    <ImageView
+        android:id="@+id/Internal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="17dp"
+        app:srcCompat="@drawable/internal"
+        android:layout_below="@+id/SelectionPrompt"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/Outer"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_toRightOf="@+id/Internal"
+        android:layout_alignBottom="@+id/Internal"
+        app:srcCompat="@drawable/outer" />
+
+    <ImageView
+        android:id="@+id/Split"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_toRightOf="@+id/Outer"
+        android:layout_alignBottom="@+id/Outer"
+        app:srcCompat="@drawable/split"/>
+
+    <ImageView
+        android:id="@+id/Themostat"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_toRightOf="@+id/Split"
+        android:layout_alignBottom="@+id/Split"
+        app:srcCompat="@drawable/thermostat"/>
+
+    <ImageView
+        android:id="@+id/Ceiling"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignBottom="@+id/Themostat"
+        android:layout_toRightOf="@+id/Themostat"
+        app:srcCompat="@drawable/ceiling"/>
+
+    <ImageView
+        android:id="@+id/PackageUnit"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/Internal"
+        android:layout_alignStart="@+id/Internal"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/packageunit"/>
+
+    <ImageView
+        android:id="@+id/RooftopAir"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_toRightOf="@+id/PackageUnit"
+        android:layout_alignBottom="@+id/PackageUnit"
+        app:srcCompat="@drawable/rooftop"/>
+
+    <ImageView
+        android:id="@+id/Tower"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_toRightOf="@+id/RooftopAir"
+        android:layout_alignBottom="@+id/RooftopAir"
+        app:srcCompat="@drawable/tower"/>
+
+    <ImageView
+        android:id="@+id/Other"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignBottom="@+id/Tower"
+        android:layout_toRightOf="@+id/Tower"
+        app:srcCompat="@drawable/other"/>
+
+    <Button
+        android:id="@+id/internalbutton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@android:color/transparent"
+        android:layout_alignBottom="@+id/Internal"
+        android:layout_alignStart="@+id/Internal"
+        android:onClick="openToCalender"/>
+
+    <Button
+        android:id="@+id/outerbutton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@android:color/transparent"
+        android:layout_alignBottom="@+id/Outer"
+        android:layout_alignStart="@+id/Outer"
+        android:onClick="openToCalender"/>
+
+    <Button
+        android:id="@+id/SplitButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@android:color/transparent"
+        android:layout_alignBottom="@+id/Split"
+        android:layout_alignStart="@+id/Split"
+        android:onClick="openToCalender"/>
+
+    <Button
+        android:id="@+id/ThemostatButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@android:color/transparent"
+        android:layout_alignBottom="@+id/Themostat"
+        android:layout_alignStart="@+id/Themostat"
+        android:onClick="openToCalender"/>
+
+    <Button
+        android:id="@+id/CeilingButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@android:color/transparent"
+        android:layout_alignBottom="@+id/Ceiling"
+        android:layout_alignStart="@+id/Ceiling"
+        android:onClick="openToCalender"/>
+
+    <Button
+        android:id="@+id/PackageButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@android:color/transparent"
+        android:layout_alignBottom="@+id/PackageUnit"
+        android:layout_alignStart="@+id/PackageUnit"
+        android:onClick="openToCalender"/>
+
+    <Button
+        android:id="@+id/Rooftop"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@android:color/transparent"
+        android:layout_alignStart="@+id/RooftopAir"
+        android:layout_alignBottom="@+id/RooftopAir"
+        android:onClick="openToCalender"/>
+
+    <Button
+        android:id="@+id/TowerAir"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@android:color/transparent"
+        android:layout_alignBottom="@+id/Tower"
+        android:layout_alignStart="@+id/Tower"
+        android:onClick="openToCalender"/>
+
+    <Button
+        android:id="@+id/otherbutton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@android:color/transparent"
+        android:layout_alignStart="@+id/Other"
+        android:layout_alignBottom="@+id/Other"
+        android:onClick="openToCalender"/>
+
+</RelativeLayout>

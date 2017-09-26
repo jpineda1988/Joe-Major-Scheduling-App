@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <ImageButton
+        android:id="@+id/Exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <ImageView
+        android:id="@+id/MailIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/Exit"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@mipmap/mailicon" />
+
+    <TextView
+        android:id="@+id/Thanks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="@string/thanks"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:layout_below="@+id/MailIcon"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/Confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Thanks"
+        android:layout_centerHorizontal="true"
+        android:text="@string/confirm"
+        android:textSize="12dp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/Confirm2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Confirm"
+        android:layout_centerHorizontal="true"
+        android:textSize="12dp"
+        android:text="@string/Confirm2"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/StayCool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Confirm2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="STAY COOL!!!!"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>

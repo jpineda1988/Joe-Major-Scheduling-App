@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/confirmpage"
+    android:backgroundTint="#508DE3"
+    android:backgroundTintMode="multiply"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/Icon"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_below="@+id/BackToCredit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        app:srcCompat="@drawable/joemajor_3_orig" />
+
+    <TextView
+        android:id="@+id/Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ServiceOrder"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:layout_below="@+id/Icon"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/selectDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date"
+        android:textColor="@android:color/white"
+        android:textSize="23dp"
+        android:layout_below="@+id/Details"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/DateChosen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="23dp"
+        android:layout_toRightOf="@+id/selectDate"
+        android:layout_alignBottom="@+id/selectDate"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/SelectTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time"
+        android:textColor="@android:color/white"
+        android:textSize="23dp"
+        android:layout_below="@+id/selectDate"
+        android:layout_alignEnd="@+id/selectDate"
+        android:layout_marginTop="25dp"
+        />
+
+    <TextView
+        android:id="@+id/TimeSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="23dp"
+        android:layout_toRightOf="@+id/SelectTime"
+        android:layout_alignBottom="@+id/SelectTime"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/Payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SelectTime"
+        android:layout_marginTop="87dp"
+        android:layout_toEndOf="@+id/BackToCredit"
+        android:text="@string/DetailsaboutPayment"
+        android:textColor="@android:color/white"
+        android:textSize="23dp"/>
+
+    <TextView
+        android:id="@+id/PersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/PersonName"
+        android:textColor="@android:color/white"
+        android:textSize="23dp"
+        android:layout_toRightOf="@+id/Payment"
+        android:layout_alignBottom="@+id/Payment"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/CardName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="23dp"
+        android:layout_toRightOf="@+id/PersonName"
+        android:layout_alignBottom="@+id/PersonName"
+        android:layout_marginStart="10dp"/>
+
+
+    <TextView
+        android:id="@+id/NumberPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/card"
+        android:textColor="@android:color/white"
+        android:textSize="23dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/PersonName"
+        android:layout_alignEnd="@+id/PersonName"/>
+
+    <TextView
+        android:id="@+id/CreditCardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        android:layout_toRightOf="@+id/NumberPrompt"
+        android:layout_alignBottom="@+id/NumberPrompt"
+        android:layout_marginStart="10dp"
+        />
+
+    <TextView
+        android:id="@+id/Expiration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/expiration_date"
+        android:textColor="@android:color/white"
+        android:textSize="23dp"
+        android:layout_below="@+id/NumberPrompt"
+        android:layout_alignStart="@+id/NumberPrompt"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/ExpirationDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:layout_toRightOf="@+id/Expiration"
+        android:layout_alignBottom="@+id/Expiration"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/CVV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cvv_number"
+        android:textSize="23dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/Expiration"
+        android:layout_alignStart="@+id/Expiration"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/SecurityCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="23dp"
+        android:layout_toRightOf="@+id/CVV"
+        android:layout_alignBottom="@+id/CVV"
+        android:layout_marginStart="10dp"/>
+
+    <Button
+        android:id="@+id/Confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:textSize="23dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_alignParentBottom="true"
+        android:onClick="sentAppointmentInfo"/>
+
+
+</RelativeLayout>

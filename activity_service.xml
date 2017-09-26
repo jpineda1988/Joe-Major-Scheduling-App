@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/ChoseService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Choose"
+        android:textColor="@android:color/white"
+        android:textSize="40dp"
+        android:layout_marginTop="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/ServiceCharges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ServiceCharge"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:layout_below="@+id/ChoseService"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/Install"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/ServiceCharges"
+        android:layout_marginEnd="41dp"
+        android:layout_marginTop="44dp"
+        android:layout_toStartOf="@+id/ServiceCharges"
+        app:srcCompat="@drawable/install" />
+
+    <ImageView
+        android:id="@+id/Replace"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_toRightOf="@+id/Install"
+        android:layout_alignBottom="@+id/Install"
+        app:srcCompat="@drawable/replacement" />
+
+    <ImageView
+        android:id="@+id/Repair"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_toRightOf="@+id/Replace"
+        android:layout_alignBottom="@+id/Replace"
+        android:layout_marginStart="35dp"
+        app:srcCompat="@drawable/repair" />
+
+    <Button
+        android:id="@+id/InstallButton"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignBottom="@+id/Install"
+        android:layout_alignStart="@+id/Install"
+        android:background="@android:color/transparent"
+        android:onClick="selectService"/>
+
+    <Button
+        android:id="@+id/ReplaceButton"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignStart="@+id/Replace"
+        android:layout_alignBottom="@+id/Replace"
+        android:background="@android:color/transparent"
+        android:onClick="selectService"/>
+
+    <Button
+        android:id="@+id/RepairButton"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignBottom="@+id/Repair"
+        android:layout_alignStart="@+id/Repair"
+        android:background="@android:color/transparent"
+        android:onClick="selectService"/>
+</RelativeLayout>

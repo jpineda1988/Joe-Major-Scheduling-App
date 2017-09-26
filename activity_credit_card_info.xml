@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/CreditCardImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@mipmap/creditcard"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/Announcement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Reason"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:layout_below="@+id/CreditCardImage"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/Surcharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Surchange"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Announcement"/>
+
+    <TextView
+        android:id="@+id/CardName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/PersonName"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:layout_below="@+id/Surcharge"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/PersonName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:inputType="textPersonName|textCapWords"
+        android:imeOptions="actionNext"
+        android:layout_toRightOf="@+id/CardName"
+        android:layout_alignBottom="@+id/CardName"/>
+
+    <TextView
+        android:id="@+id/Prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/card"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:layout_below="@+id/CardName"
+        android:layout_alignStart="@+id/CardName"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/CreditCardNumber"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:imeOptions="actionDone"
+        android:maxLength="16"
+        android:layout_toRightOf="@+id/Prompt"
+        android:layout_alignBottom="@+id/Prompt"/>
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/PersonName"
+        android:layout_alignStart="@+id/CreditCardImage"
+        android:layout_marginStart="29dp"
+        android:text="@string/expiration_date"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"/>
+
+    <Spinner
+        android:id="@+id/Month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:layout_alignBottom="@+id/Date"
+        android:layout_toRightOf="@+id/Date"
+        android:layout_marginStart="10dp">
+    </Spinner>
+
+    <Spinner
+        android:id="@+id/Year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:layout_toRightOf="@+id/Month"
+        android:layout_alignBottom="@+id/Month"
+        android:layout_marginStart="20dp">
+    </Spinner>
+
+    <TextView
+        android:id="@+id/Security"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cvv_number"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:layout_below="@+id/Date"
+        android:layout_alignEnd="@+id/Date"
+        android:layout_marginTop="30dp"
+        />
+
+    <EditText
+        android:id="@+id/Code"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:inputType="numberPassword"
+        android:imeOptions="actionDone"
+        android:maxLength="3"
+        android:layout_toRightOf="@+id/Security"
+        android:layout_alignBottom="@+id/Security"/>
+
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Continue"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:background="@android:color/holo_orange_dark"
+        android:onClick="confirmAppointment"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

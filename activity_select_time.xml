@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/PromptForTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ChooseTime"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/OperationTime1"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="7:00 AM"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/buttonborder"
+        android:layout_marginTop="30dp"
+        android:onClick="openInfoaboutCustomer"
+        android:layout_marginStart="31dp"
+        android:layout_below="@+id/PromptForTime"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/OperationTime2"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="7:30 AM"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/buttonborder"
+        android:layout_toRightOf="@+id/OperationTime1"
+        android:layout_alignBottom="@+id/OperationTime1"
+        android:onClick="openInfoaboutCustomer"/>
+
+    <Button
+        android:id="@+id/OperationTime3"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="8:00 AM"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/buttonborder"
+        android:layout_toRightOf="@+id/OperationTime2"
+        android:layout_alignBottom="@+id/OperationTime2"
+        android:onClick="openInfoaboutCustomer"/>
+
+    <Button
+        android:id="@+id/OperationTime4"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="8:30 AM"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/buttonborder"
+        android:layout_toRightOf="@+id/OperationTime3"
+        android:layout_alignBottom="@+id/OperationTime3"
+        android:onClick="openInfoaboutCustomer"/>
+
+    <Button
+        android:id="@+id/OperationTime5"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="9:00 AM"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/buttonborder"
+        android:layout_toRightOf="@+id/OperationTime4"
+        android:layout_alignBottom="@+id/OperationTime4"
+        android:onClick="openInfoaboutCustomer"/>
+
+    <Button
+        android:id="@+id/OperationTime6"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="9:30 AM"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/buttonborder"
+        android:layout_toRightOf="@+id/OperationTime5"
+        android:layout_alignBottom="@+id/OperationTime5"
+        android:onClick="openInfoaboutCustomer"/>
+
+    <Button
+        android:id="@+id/OperationTime7"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="10:00 AM"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/buttonborder"
+        android:layout_below="@+id/OperationTime1"
+        android:layout_alignStart="@+id/OperationTime1"
+        android:onClick="openInfoaboutCustomer"/>
+
+    <Button
+        android:id="@+id/OperationTime8"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="10:30 AM"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/buttonborder"
+        android:layout_toRightOf="@+id/OperationTime7"
+        android:layout_alignBottom="@+id/OperationTime7"
+        android:onClick="openInfoaboutCustomer"/>
+
+    <Button
+        android:id="@+id/OperationTime9"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="11:00 AM"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/buttonborder"
+        android:onClick="openInfoaboutCustomer"
+        android:layout_toRightOf="@+id/OperationTime8"
+        android:layout_alignBottom="@+id/OperationTime8"/>
+
+    <Button
+        android:id="@+id/OperationTime10"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="11:30 AM"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/buttonborder"
+        android:onClick="openInfoaboutCustomer"
+        android:layout_toRightOf="@+id/OperationTime9"
+        android:layout_alignBottom="@+id/OperationTime9"/>
+
+    <Button
+        android:id="@+id/OperationTime11"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="12:00 PM"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/buttonborder"
+        android:onClick="openInfoaboutCustomer"
+        android:layout_toRightOf="@+id/OperationTime10"
+        android:layout_alignBottom="@+id/OperationTime10"/>
+
+    <Button
+        android:id="@+id/OperationTime12"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="12:30 PM"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/buttonborder"
+        android:onClick="openInfoaboutCustomer"
+        android:layout_toRightOf="@+id/OperationTime11"
+        android:layout_alignBottom="@+id/OperationTime11"/>
+
+    <Button
+        android:id="@+id/OperationTime13"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="1:00 PM"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/buttonborder"
+        android:onClick="openInfoaboutCustomer"
+        android:layout_below="@+id/OperationTime7"
+        android:layout_alignStart="@+id/OperationTime7"/>
+
+    <Button
+        android:id="@+id/OperationTime14"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="1:30 PM"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/buttonborder"
+        android:onClick="openInfoaboutCustomer"
+        android:layout_alignBottom="@+id/OperationTime13"
+        android:layout_toRightOf="@+id/OperationTime13"/>
+
+    <Button
+        android:id="@+id/OperationTime15"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="2:00 PM"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/buttonborder"
+        android:onClick="openInfoaboutCustomer"
+        android:layout_toRightOf="@+id/OperationTime14"
+        android:layout_alignBottom="@+id/OperationTime14" />
+
+    <Button
+        android:id="@+id/OperationTime16"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="2:30 PM"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/buttonborder"
+        android:onClick="openInfoaboutCustomer"
+        android:layout_toRightOf="@+id/OperationTime15"
+        android:layout_alignBottom="@+id/OperationTime15"/>
+
+    <Button
+        android:id="@+id/OperationTime17"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="3:00 PM"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/buttonborder"
+        android:onClick="openInfoaboutCustomer"
+        android:layout_alignBottom="@+id/OperationTime16"
+        android:layout_toRightOf="@+id/OperationTime16"/>
+
+    <Button
+        android:id="@+id/OperationTime18"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="3:30 PM"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/buttonborder"
+        android:onClick="openInfoaboutCustomer"
+        android:layout_toRightOf="@+id/OperationTime17"
+        android:layout_alignBottom="@+id/OperationTime17"/>
+
+    <Button
+        android:id="@+id/OperationTime19"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="4:00 PM"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/buttonborder"
+        android:onClick="openInfoaboutCustomer"
+        android:layout_below="@+id/OperationTime13"
+        android:layout_alignStart="@+id/OperationTime13"/>
+
+    <Button
+        android:id="@+id/OperationTime20"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="4:30 PM"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/buttonborder"
+        android:onClick="openInfoaboutCustomer"
+        android:layout_alignBottom="@+id/OperationTime19"
+        android:layout_toRightOf="@+id/OperationTime19"/>
+
+    <Button
+        android:id="@+id/OperationTime21"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="5:00 PM"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/buttonborder"
+        android:onClick="openInfoaboutCustomer"
+        android:layout_toRightOf="@+id/OperationTime20"
+        android:layout_alignBottom="@+id/OperationTime20"/>
+
+    <Button
+        android:id="@+id/OperationTime22"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="5:30 PM"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/buttonborder"
+        android:onClick="openInfoaboutCustomer"
+        android:layout_toRightOf="@+id/OperationTime21"
+        android:layout_alignBottom="@+id/OperationTime21"/>
+
+    <Button
+        android:id="@+id/OperationTime23"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="6:00 PM"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/buttonborder"
+        android:onClick="openInfoaboutCustomer"
+        android:layout_alignBottom="@+id/OperationTime22"
+        android:layout_toRightOf="@+id/OperationTime22"/>
+
+    <Button
+        android:id="@+id/OperationTime24"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="6:30 PM"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/buttonborder"
+        android:onClick="openInfoaboutCustomer"
+        android:layout_toRightOf="@+id/OperationTime23"
+        android:layout_alignBottom="@+id/OperationTime23"/>
+
+
+</RelativeLayout>
